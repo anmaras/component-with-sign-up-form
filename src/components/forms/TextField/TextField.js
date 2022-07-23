@@ -9,7 +9,7 @@ class TextField extends Component {
         <div>
           <div className={style['textfield-wrapper']}>
             <label htmlFor="first-name"></label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" placeholder="First Name" />
             <img src={iconError} alt="error icon" />
           </div>
           <p className={style['textfield-error']}>First Name cannot be empty</p>
@@ -17,7 +17,7 @@ class TextField extends Component {
         <div>
           <div className={style['textfield-wrapper']}>
             <label htmlFor="last-name"></label>
-            <input type="text" id="last-name" />
+            <input type="text" id="last-name" placeholder="Last Name" />
             <img src={iconError} alt="error icon" />
           </div>
           <p className={style['textfield-error']}>Last Name cannot be empty</p>
@@ -25,7 +25,7 @@ class TextField extends Component {
         <div>
           <div className={style['textfield-wrapper']}>
             <label htmlFor="email"></label>
-            <input type="email" id="email" />
+            <input type="email" id="email" placeholder="Email Address" />
             <img src={iconError} alt="error icon" />
           </div>
           <p className={style['textfield-error']}>
@@ -35,7 +35,7 @@ class TextField extends Component {
         <div>
           <div className={style['textfield-wrapper']}>
             <label htmlFor="password"></label>
-            <input type="password" id="password" />
+            <input type="password" id="password" placeholder="Password" />
             <img src={iconError} alt="error icon" />
           </div>
           <p className={style['textfield-error']}>Password cannot be empty</p>
@@ -47,10 +47,8 @@ class TextField extends Component {
           <div className={style['terms-wrapper']}>
             <p className={style['terms-statement']}>
               By clicking the button, you agreeing to our
+              <span className={style['link-text']}> Terms and Services</span>
             </p>
-            <button className={style['link-btn']} type="button">
-              Terms and Services
-            </button>
           </div>
         </div>
       </form>
