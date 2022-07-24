@@ -3,6 +3,8 @@
   padding-block: 1.5rem;
   background-color: white;
   border-radius: 10px;
+  display: grid;
+  gap: 1.1rem;
 }
 
 .textfield-wrapper {
@@ -15,7 +17,8 @@ input {
   padding-inline: 1rem;
   border-radius: 5px;
   border: 0;
-  outline: 1px solid rgb(var(--clr-grayish-blue));
+  outline: 1.5px solid rgb(var(--clr-grayish-blue), 0.2);
+  font-weight: 600;
 }
 
 input:focus {
@@ -39,7 +42,8 @@ input::placeholder {
   color: red;
   font-size: 10px;
   font-style: italic;
-  padding-block: 0.08rem;
+  padding-top: 0.2rem;
+  display: none;
 }
 
 @media (min-width: 45rem) {
