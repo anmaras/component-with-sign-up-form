@@ -5,8 +5,6 @@
 }
 
 .title-wrapper h1 {
-  /* position: relative; */
-  /* top: 2.65rem; */
   padding-top: 3.7rem;
   font-size: 1.73rem;
   line-height: 1.31;
@@ -18,3 +16,24 @@
   line-height: 1.61;
   margin-bottom: 1.85rem;
 }
+
+@media (min-width: 45rem) {
+  .title-wrapper {
+    text-align: start;
+    padding-left: 10.4rem;
+  }
+
+  .title-wrapper h1 {
+    font-size: 3rem;
+    letter-spacing: 0.65px;
+    position: relative;
+    bottom: 14px;
+    line-height: 1.1;
+  }
+
+  .title-wrapper p {
+    position: relative;
+    letter-spacing: 0.06px;
+    bottom: 7px;
+  }
+} ;

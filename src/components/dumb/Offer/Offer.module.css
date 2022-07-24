@@ -11,10 +11,13 @@
   margin-bottom: 1.5rem;
 }
 
-.offer-wrapper > div {
-}
-
 .offer-wrapper span {
   color: white;
   font-weight: 600;
+}
+
+@media (min-width: 45rem) {
+  .offer-wrapper {
+    max-width: 540px;
+  }
 }
