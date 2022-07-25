@@ -11,7 +11,13 @@ class App extends Component {
   render() {
     const imageUrl = window.innerWidth < 1440 ? bgMobile : bgDesktop;
     return (
-      <div className="App" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div
+        className="App"
+        style={{
+          backgroundImage: `url(${imageUrl})`,
+          backgroundColor: `rgb(255, 122, 122)`,
+        }}
+      >
         <section className="title-section">
           <Title />
         </section>
