@@ -13,7 +13,6 @@ class TextField extends Component {
       email: '',
       password: '',
       errors: {},
-      isValid: true,
     };
   }
 
@@ -63,22 +62,19 @@ class TextField extends Component {
     const icon = <img src={iconError} alt="error icon" />;
 
     return (
-      <form className={style.form} onSubmit={this.onSubmit} noValidate>
+      <form className={style.form} onSubmit={this.onSubmit}>
         <div>
           <div className={style['textfield-wrapper']}>
             <label htmlFor="first-name"></label>
             <input
+              className={style['form-input']}
               type="text"
-              id="first-name"
               placeholder="First Name"
               name="firstName"
               value={firstName}
               onChange={this.inputValueHandler}
             />
-
             {errors.hasOwnProperty('firstNameLength') && icon}
-
-            {/* <img src={iconError} alt="error icon" /> */}
           </div>
           <p className={style['textfield-error']}>{errors.firstNameLength}</p>
         </div>
@@ -87,7 +83,7 @@ class TextField extends Component {
             <label htmlFor="last-name"></label>
             <input
               type="text"
-              id="last-name"
+              className={style['form-input']}
               placeholder="Last Name"
               name="lastName"
               value={lastName}
@@ -102,7 +98,7 @@ class TextField extends Component {
             <label htmlFor="email"></label>
             <input
               type="email"
-              id="email"
+              className={style['form-input']}
               placeholder="Email Address"
               name="email"
               value={email}
@@ -117,7 +113,7 @@ class TextField extends Component {
             <label htmlFor="password"></label>
             <input
               type="password"
-              id="password"
+              className={style['form-input']}
               placeholder="Password"
               name="password"
               value={password}
