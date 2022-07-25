@@ -3,7 +3,7 @@ import Offer from './components/dumb/Offer/Offer';
 import Title from './components/dumb/Title/Title';
 import bgMobile from './assets/images/bg-intro-mobile.png';
 import bgDesktop from './assets/images/bg-intro-desktop.png';
-import './App.css';
+import style from './App.module.css';
 
 import React, { Component } from 'react';
 
@@ -12,10 +12,9 @@ class App extends Component {
     const imageUrl = window.innerWidth < 1440 ? bgMobile : bgDesktop;
     return (
       <div
-        className="App"
+        className={style['main-app']}
         style={{
           backgroundImage: `url(${imageUrl})`,
-          backgroundColor: `rgb(255, 122, 122)`,
         }}
       >
         <section className="title-section">
