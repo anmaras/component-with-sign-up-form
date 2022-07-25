@@ -11,7 +11,7 @@
   position: relative;
 }
 
-input {
+.form-input {
   width: 100%;
   padding-block: 0.97rem;
   padding-inline: 1rem;
@@ -21,11 +21,11 @@ input {
   font-weight: 600;
 }
 
-input:focus {
+.form-input:focus {
   outline-color: rgb(var(--clr-blue));
 }
 
-input::placeholder {
+.form-input::placeholder {
   font-weight: 600;
   font-size: 0.95rem;
 }
